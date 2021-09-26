@@ -64,3 +64,16 @@ ul li a:hover {
 .logo {
 	border-radius: 50%;
 }
+
+.text {
+	color: white;
+}
+
+.a {
+	display: block;  
+	text-align:center;
+}
+
+.text1 {
+	color: black;
+}
