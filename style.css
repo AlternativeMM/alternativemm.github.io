@@ -1,0 +1,40 @@
+.logo {
+	border-radius: 50%;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.t {
+	color: white;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background: #689CD2;
+	color: #fff;
+}
+
+.header_section {
+	display: flex;
+	align-items: center;
+}
+
+.header_item {
+	padding: 10px 15px;
+	font-size: 20px;
+	margin-left: 150px;
+}
+
+.header_item:hover{
+	background-color: #FF9900;
+	border-radius: 4px;
+}
+
+.headerButton {
+	cursor: pointer;
+}
