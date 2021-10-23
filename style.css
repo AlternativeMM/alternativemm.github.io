@@ -5,6 +5,7 @@
 a {
 	color: #fff;
 	text-decoration: none;
+	align-items: center;
 }
 
 .t {
@@ -37,4 +38,9 @@ a {
 
 .headerButton {
 	cursor: pointer;
+}
+
+body {
+    background-image: img/fon.jpg;
+    background-attachment: fixed;
 }
