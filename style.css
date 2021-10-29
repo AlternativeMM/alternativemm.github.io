@@ -44,3 +44,38 @@ body {
     background-image: img/fon.jpg;
     background-attachment: fixed;
 }
+
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .portfolio{
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+}
+
+
+.table{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+@media only screen and (max-width: 1000px) {
+  .table{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+  }
+}
+
