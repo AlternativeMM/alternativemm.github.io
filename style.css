@@ -28,7 +28,7 @@ a {
 .header_item {
 	padding: 10px 15px;
 	font-size: 20px;
-	margin-left: 150px;
+	margin-left: 100px;
 }
 
 .header_item:hover{
@@ -43,6 +43,7 @@ a {
 body {
     background-image: img/fon.jpg;
     background-attachment: fixed;
+	image-repeat: no-repeat;
 }
 
 
@@ -79,3 +80,8 @@ body {
   }
 }
 
+.translate {
+	background: transparent;
+	border: none;
+	margin-left: 12px;
+}
