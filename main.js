@@ -1,8 +1,7 @@
-window.onscroll = function showHeader() {
-	var header = document.querySelector('.header');
-	if(window.pageYOffset > 50) {
-		header.classList.add('header_fixed');
-	} else {
-		header.classList.remove('header_fixed');
-	}
-}
+$(document).ready(function() {
+	$('.menu-burger__header').click(function(){
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.header__nav').toggleClass('open-menu');
+        $('body').toggleClass('fixed-page');
+	});
+});
