@@ -1,5 +1,6 @@
-.logo {
-	border-radius: 50%;
+html, body{
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -18,6 +19,8 @@ a {
 	padding: 10px;
 	background: #689CD2;
 	color: #fff;
+	position: fixed;
+  width: 100%;
 }
 
 .header_section {
@@ -26,9 +29,9 @@ a {
 }
 
 .header_item {
-	padding: 10px 15px;
+	padding: 5px 10px;
 	font-size: 20px;
-	margin-left: 100px;
+	margin-left: 20px;
 }
 
 .header_item:hover{
@@ -43,7 +46,8 @@ a {
 body {
     background-image: img/fon.jpg;
     background-attachment: fixed;
-	image-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-size: 1600px;
 }
 
 
@@ -84,4 +88,240 @@ body {
 	background: transparent;
 	border: none;
 	margin-left: 12px;
+}
+
+
+
+.tracks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 50px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .tracks{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 50px;
+  }
+}
+
+
+
+.track {
+	background-color: white;
+	border-radius: 5%;
+}
+
+
+.alt {
+	padding-left: 435px;
+}
+
+
+
+
+#menu__toggle {
+  opacity: 0;
+}
+
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  transition-duration: 0.9s;
+  left: 0;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .5s;
+}
+.menu__box {
+  transition-duration: .5s;
+}
+.menu__item {
+  transition-duration: .5s;
+}
+
+
+
+.video {
+	padding-left: 35px;
+	padding-top: 30px;
+}
+
+
+
+.shine-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  transition: .2s ease-in-out;
+
+}
+.shine-button:hover {
+  background: black;
+  color: #fff;
+  border: 2px solid #fff;
+  transition-duration: .5s;
+}
+.shine-button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+  transition-duration: .5s;
+}
+
+
+.video {
+	padding-left: 15px;
+	padding-top: 30px;
+	min-width: 1500;
+}
+
+.foto {
+	padding-top: 50px;
+}
+
+
+.info {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.infoo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+.mini {
+	border-radius: 15%;
+}
+
+
+
+.mini_items {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 15px;
+}
+
+
+.listen_now {
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px;
+}
+
+
+.see_more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
